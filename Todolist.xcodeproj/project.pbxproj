@@ -16,6 +16,7 @@
 		8389F2E62476596300D618A4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8389F2E42476596300D618A4 /* LaunchScreen.storyboard */; };
 		8389F2F12476596300D618A4 /* TodolistTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8389F2F02476596300D618A4 /* TodolistTests.swift */; };
 		8389F2FC2476596300D618A4 /* TodolistUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8389F2FB2476596300D618A4 /* TodolistUITests.swift */; };
+		8389F30B24765B8700D618A4 /* CoreDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8389F30A24765B8700D618A4 /* CoreDataManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +52,7 @@
 		8389F2F72476596300D618A4 /* TodolistUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TodolistUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		8389F2FB2476596300D618A4 /* TodolistUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodolistUITests.swift; sourceTree = "<group>"; };
 		8389F2FD2476596300D618A4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8389F30A24765B8700D618A4 /* CoreDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,6 +103,7 @@
 		8389F2D52476595E00D618A4 /* Todolist */ = {
 			isa = PBXGroup;
 			children = (
+				8389F30924765B5600D618A4 /* Managers */,
 				8389F2D62476595E00D618A4 /* AppDelegate.swift */,
 				8389F2D82476595E00D618A4 /* SceneDelegate.swift */,
 				8389F2DD2476595E00D618A4 /* ContentView.swift */,
@@ -137,6 +140,14 @@
 				8389F2FD2476596300D618A4 /* Info.plist */,
 			);
 			path = TodolistUITests;
+			sourceTree = "<group>";
+		};
+		8389F30924765B5600D618A4 /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+				8389F30A24765B8700D618A4 /* CoreDataManager.swift */,
+			);
+			path = Managers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -273,6 +284,7 @@
 				8389F2DC2476595E00D618A4 /* Todolist.xcdatamodeld in Sources */,
 				8389F2D72476595E00D618A4 /* AppDelegate.swift in Sources */,
 				8389F2DE2476595E00D618A4 /* ContentView.swift in Sources */,
+				8389F30B24765B8700D618A4 /* CoreDataManager.swift in Sources */,
 				8389F2D92476595E00D618A4 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -17,6 +17,9 @@
 		8389F2F12476596300D618A4 /* TodolistTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8389F2F02476596300D618A4 /* TodolistTests.swift */; };
 		8389F2FC2476596300D618A4 /* TodolistUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8389F2FB2476596300D618A4 /* TodolistUITests.swift */; };
 		8389F30B24765B8700D618A4 /* CoreDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8389F30A24765B8700D618A4 /* CoreDataManager.swift */; };
+		8389F30E24765D7A00D618A4 /* NSManagedObjectContext+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8389F30D24765D7A00D618A4 /* NSManagedObjectContext+Extensions.swift */; };
+		8389F31124765ED800D618A4 /* AddTodoViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8389F31024765ED800D618A4 /* AddTodoViewModel.swift */; };
+		8389F31424765F7500D618A4 /* AddTodoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8389F31324765F7500D618A4 /* AddTodoView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +56,9 @@
 		8389F2FB2476596300D618A4 /* TodolistUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodolistUITests.swift; sourceTree = "<group>"; };
 		8389F2FD2476596300D618A4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8389F30A24765B8700D618A4 /* CoreDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataManager.swift; sourceTree = "<group>"; };
+		8389F30D24765D7A00D618A4 /* NSManagedObjectContext+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSManagedObjectContext+Extensions.swift"; sourceTree = "<group>"; };
+		8389F31024765ED800D618A4 /* AddTodoViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddTodoViewModel.swift; sourceTree = "<group>"; };
+		8389F31324765F7500D618A4 /* AddTodoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddTodoView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,10 +109,11 @@
 		8389F2D52476595E00D618A4 /* Todolist */ = {
 			isa = PBXGroup;
 			children = (
+				8389F31524765F7F00D618A4 /* Applications */,
+				8389F31224765F5700D618A4 /* Views */,
+				8389F30F24765E9E00D618A4 /* ViewModels */,
+				8389F30C24765D3200D618A4 /* Extensions */,
 				8389F30924765B5600D618A4 /* Managers */,
-				8389F2D62476595E00D618A4 /* AppDelegate.swift */,
-				8389F2D82476595E00D618A4 /* SceneDelegate.swift */,
-				8389F2DD2476595E00D618A4 /* ContentView.swift */,
 				8389F2DF2476596300D618A4 /* Assets.xcassets */,
 				8389F2E42476596300D618A4 /* LaunchScreen.storyboard */,
 				8389F2E72476596300D618A4 /* Info.plist */,
@@ -148,6 +155,40 @@
 				8389F30A24765B8700D618A4 /* CoreDataManager.swift */,
 			);
 			path = Managers;
+			sourceTree = "<group>";
+		};
+		8389F30C24765D3200D618A4 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				8389F30D24765D7A00D618A4 /* NSManagedObjectContext+Extensions.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		8389F30F24765E9E00D618A4 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				8389F31024765ED800D618A4 /* AddTodoViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		8389F31224765F5700D618A4 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				8389F2DD2476595E00D618A4 /* ContentView.swift */,
+				8389F31324765F7500D618A4 /* AddTodoView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		8389F31524765F7F00D618A4 /* Applications */ = {
+			isa = PBXGroup;
+			children = (
+				8389F2D62476595E00D618A4 /* AppDelegate.swift */,
+				8389F2D82476595E00D618A4 /* SceneDelegate.swift */,
+			);
+			path = Applications;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -284,8 +325,11 @@
 				8389F2DC2476595E00D618A4 /* Todolist.xcdatamodeld in Sources */,
 				8389F2D72476595E00D618A4 /* AppDelegate.swift in Sources */,
 				8389F2DE2476595E00D618A4 /* ContentView.swift in Sources */,
+				8389F31124765ED800D618A4 /* AddTodoViewModel.swift in Sources */,
 				8389F30B24765B8700D618A4 /* CoreDataManager.swift in Sources */,
 				8389F2D92476595E00D618A4 /* SceneDelegate.swift in Sources */,
+				8389F31424765F7500D618A4 /* AddTodoView.swift in Sources */,
+				8389F30E24765D7A00D618A4 /* NSManagedObjectContext+Extensions.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

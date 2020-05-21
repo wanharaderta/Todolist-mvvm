@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8355A4052476E4AE0068C33E /* TodoListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8355A4042476E4AE0068C33E /* TodoListViewModel.swift */; };
+		8355A4072476E54B0068C33E /* TodoViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8355A4062476E54B0068C33E /* TodoViewModel.swift */; };
 		8389F2D72476595E00D618A4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8389F2D62476595E00D618A4 /* AppDelegate.swift */; };
 		8389F2D92476595E00D618A4 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8389F2D82476595E00D618A4 /* SceneDelegate.swift */; };
 		8389F2DC2476595E00D618A4 /* Todolist.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 8389F2DA2476595E00D618A4 /* Todolist.xcdatamodeld */; };
@@ -40,6 +42,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		8355A4042476E4AE0068C33E /* TodoListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodoListViewModel.swift; sourceTree = "<group>"; };
+		8355A4062476E54B0068C33E /* TodoViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodoViewModel.swift; sourceTree = "<group>"; };
 		8389F2D32476595E00D618A4 /* Todolist.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Todolist.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8389F2D62476595E00D618A4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8389F2D82476595E00D618A4 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -169,6 +173,8 @@
 			isa = PBXGroup;
 			children = (
 				8389F31024765ED800D618A4 /* AddTodoViewModel.swift */,
+				8355A4042476E4AE0068C33E /* TodoListViewModel.swift */,
+				8355A4062476E54B0068C33E /* TodoViewModel.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -326,9 +332,11 @@
 				8389F2D72476595E00D618A4 /* AppDelegate.swift in Sources */,
 				8389F2DE2476595E00D618A4 /* ContentView.swift in Sources */,
 				8389F31124765ED800D618A4 /* AddTodoViewModel.swift in Sources */,
+				8355A4052476E4AE0068C33E /* TodoListViewModel.swift in Sources */,
 				8389F30B24765B8700D618A4 /* CoreDataManager.swift in Sources */,
 				8389F2D92476595E00D618A4 /* SceneDelegate.swift in Sources */,
 				8389F31424765F7500D618A4 /* AddTodoView.swift in Sources */,
+				8355A4072476E54B0068C33E /* TodoViewModel.swift in Sources */,
 				8389F30E24765D7A00D618A4 /* NSManagedObjectContext+Extensions.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

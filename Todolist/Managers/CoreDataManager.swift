@@ -18,6 +18,19 @@ class CoreDataManager {
     private init(moc:NSManagedObjectContext){
         self.moc = moc
     }
+
+    func getAllTodos() -> [Todo] {
+        var todos   = [Todo]()
+        let todosRequest : NSFetchRequest<Todo>  = Todo.fetchRequest()
+        
+        do {
+            todos = try self.moc.fetch(todosRequest)
+        } catch let error as NSError {
+            print(error)
+        }
+        
+        return todos
+    }
     
     func saveTodo(title :String, desc : String){
         let todo    = Todo(context: self.moc)

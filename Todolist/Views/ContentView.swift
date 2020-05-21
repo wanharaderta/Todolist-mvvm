@@ -9,6 +9,13 @@
 import SwiftUI
 
 struct ContentView: View {
+    
+    @ObservedObject var todoListVM :TodoListViewModel
+    
+    init() {
+        self.todoListVM = TodoListViewModel()
+    }
+    
     var body: some View {
         Text("Hello, World!")
     }

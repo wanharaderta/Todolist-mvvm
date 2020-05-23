@@ -34,8 +34,15 @@ class CoreDataManager {
         return todos.first
     }
     
-    func deleteTodo() -> <#return type#> {
-        <#function body#>
+    func deleteTodo(title:String){
+        do {
+            if let todo = fetchTodo(title: title){
+                self.moc.delete(todo)
+                try self.moc.save() 
+            }
+        } catch let error as NSError {
+            print(error)
+        }
     }
 
     func getAllTodos() -> [Todo] {

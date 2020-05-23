@@ -18,13 +18,20 @@ struct ContentView: View {
         self.viewModel = TodoListViewModel()
     }
     
+    private func delete(at offsets:IndexSet){
+        offsets.forEach { index in
+            let todo = self.viewModel.todos[index]
+            self.viewModel.deleteTodo(viewModel: todo)
+        }
+    }
+    
     var body: some View {
         
         NavigationView {
             List {
                 ForEach(self.viewModel.todos, id: \.title) { todo in
                     TodoCell(todo: todo)
-                }
+                }.onDelete(perform: delete)
             }
             .sheet(isPresented: self.$isPresented, onDismiss: {
                 
@@ -39,6 +46,8 @@ struct ContentView: View {
         }
         
     }
+    
+    
 }
 
 

@@ -22,4 +22,9 @@ class TodoListViewModel : ObservableObject {
         self.todos  = CoreDataManager.shared.getAllTodos().map(TodoViewModel.init)
         print(self.todos)
     }
+    
+    func deleteTodo(viewModel:TodoViewModel) {
+        CoreDataManager.shared.deleteTodo(title: viewModel.title)
+        fetchAllTodos()
+    }
 }

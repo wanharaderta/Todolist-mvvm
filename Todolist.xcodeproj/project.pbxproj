@@ -113,6 +113,7 @@
 		8389F2D52476595E00D618A4 /* Todolist */ = {
 			isa = PBXGroup;
 			children = (
+				83901664247906F600801102 /* Database */,
 				8389F31524765F7F00D618A4 /* Applications */,
 				8389F31224765F5700D618A4 /* Views */,
 				8389F30F24765E9E00D618A4 /* ViewModels */,
@@ -121,7 +122,6 @@
 				8389F2DF2476596300D618A4 /* Assets.xcassets */,
 				8389F2E42476596300D618A4 /* LaunchScreen.storyboard */,
 				8389F2E72476596300D618A4 /* Info.plist */,
-				8389F2DA2476595E00D618A4 /* Todolist.xcdatamodeld */,
 				8389F2E12476596300D618A4 /* Preview Content */,
 			);
 			path = Todolist;
@@ -195,6 +195,14 @@
 				8389F2D82476595E00D618A4 /* SceneDelegate.swift */,
 			);
 			path = Applications;
+			sourceTree = "<group>";
+		};
+		83901664247906F600801102 /* Database */ = {
+			isa = PBXGroup;
+			children = (
+				8389F2DA2476595E00D618A4 /* Todolist.xcdatamodeld */,
+			);
+			path = Database;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

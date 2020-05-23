@@ -18,6 +18,25 @@ class CoreDataManager {
     private init(moc:NSManagedObjectContext){
         self.moc = moc
     }
+    
+    func fetchTodo(title:String) -> Todo? {
+        var todos    = [Todo]()
+        
+        let request: NSFetchRequest<Todo>    = Todo.fetchRequest()
+        request.predicate    = NSPredicate(format: "title == %@", title)
+        
+        do {
+            todos = try self.moc.fetch(request)
+        } catch let error as NSError {
+            print(error)
+        }
+        
+        return todos.first
+    }
+    
+    func deleteTodo() -> <#return type#> {
+        <#function body#>
+    }
 
     func getAllTodos() -> [Todo] {
         var todos   = [Todo]()

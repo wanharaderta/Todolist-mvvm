@@ -11,6 +11,7 @@ import SwiftUI
 struct AddTodoView: View {
     
     @State var addTodoVM = AddTodoViewModel()
+    @Binding var isPresented:Bool
     
     var body: some View {
         NavigationView {
@@ -22,6 +23,7 @@ struct AddTodoView: View {
                         .padding(16)
                     Button("Save"){
                         self.addTodoVM.saveTodo()
+                        self.isPresented = false
                     }.padding(16)
                         .foregroundColor(Color.white)
                         .background(Color.green)
@@ -39,7 +41,7 @@ struct AddTodoView: View {
 #if DEBUG
 struct AddTodoView_Previews: PreviewProvider {
     static var previews: some View {
-        AddTodoView()
+        AddTodoView(isPresented: .constant(false))
     }
 }
 #endif

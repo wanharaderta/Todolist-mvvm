@@ -15,26 +15,29 @@ struct AddTodoView: View {
     
     var body: some View {
         NavigationView {
-            Group {
-                VStack {
-                    TextField("Title", text: self.$addTodoVM.title)
-                        .padding(16)
-                    TextField("Descripsion", text: self.$addTodoVM.desc)
-                        .padding(16)
-                    Button("Save"){
-                        self.addTodoVM.saveTodo()
-                        self.isPresented = false
-                    }.padding(16)
-                        .foregroundColor(Color.white)
-                        .background(Color.green)
-                        .cornerRadius(10)
-                }
+            VStack {
                 
+                TextField("Title", text: self.$addTodoVM.title)
+                    .padding(.all)
+                    .textFieldStyle(RoundedBorderTextFieldStyle())
                 
-            }.padding()
+                TextField("Descripsion", text: self.$addTodoVM.desc)
+                    .padding(.all)
+                    .textFieldStyle(RoundedBorderTextFieldStyle())
                 
-                .navigationBarTitle("Todo List")
+                Button("Save"){
+                    self.addTodoVM.saveTodo()
+                    self.isPresented = false
+                }.padding(16)
+                    .foregroundColor(Color.white)
+                    .background(Color.green)
+                    .cornerRadius(10)
+            }.frame(alignment: .leading)
+                .padding(16)
+            
+            .navigationBarTitle("Add Todo")
         }
+        
     }
 }
 

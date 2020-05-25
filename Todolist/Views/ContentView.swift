@@ -12,6 +12,7 @@ struct ContentView: View {
     
     @ObservedObject var viewModel :TodoListViewModel
     @State private var isPresented : Bool = false
+    @State private var searchTerm: String = ""
     
     
     init() {
@@ -29,7 +30,14 @@ struct ContentView: View {
         
         NavigationView {
             List {
-                ForEach(self.viewModel.todos, id: \.title) { todo in
+                
+                // SearchBar is UIViewRepresentable
+                SearchBar(text: $searchTerm)
+                
+                ForEach(self.viewModel.todos.filter {
+                    self.searchTerm.isEmpty ? true :
+                        $0.title.localizedCapitalized.contains(self.searchTerm)
+                }, id: \.title) { todo in
                     TodoCell(todo: todo)
                 }.onDelete(perform: delete)
             }
@@ -52,7 +60,7 @@ struct ContentView: View {
 
 
 struct TodoCell: View {
-    let todo : TodoModel
+    let todo : TodoViewModel
     
     var body: some View {
         VStack(alignment: .leading) {

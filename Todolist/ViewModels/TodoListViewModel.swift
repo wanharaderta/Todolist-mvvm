@@ -12,18 +12,18 @@ import Combine
 
 class TodoListViewModel : ObservableObject {
     
-    @Published var todos   = [TodoModel]()
+    @Published var todos   = [TodoViewModel]()
     
     init() {
         fetchAllTodos()
     }
     
     func fetchAllTodos() {
-        self.todos  = CoreDataManager.shared.getAllTodos().map(TodoModel.init)
+        self.todos  = CoreDataManager.shared.getAllTodos().map(TodoViewModel.init)
         print(self.todos)
     }
     
-    func deleteTodo(viewModel:TodoModel) {
+    func deleteTodo(viewModel:TodoViewModel) {
         CoreDataManager.shared.deleteTodo(title: viewModel.title)
         fetchAllTodos()
     }

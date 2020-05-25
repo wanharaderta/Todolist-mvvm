@@ -1,4 +1,5 @@
 # Todo App
+A Simple Todo app developed using SwiftUI, MVVM and Core Data
 
 ## Feature
 * Add Todo <br/>

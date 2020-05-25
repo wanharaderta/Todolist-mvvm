@@ -1,7 +1,7 @@
 # Todo App
 A Simple Todo app developed using SwiftUI, MVVM and Core Data
 
-## Feature
+## Features
 * Add Todo <br/>
 * Delete Todo <br/>
 * Search <br/>

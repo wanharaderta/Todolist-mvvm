@@ -52,7 +52,7 @@ struct ContentView: View {
 
 
 struct TodoCell: View {
-    let todo : TodoViewModel
+    let todo : TodoModel
     
     var body: some View {
         VStack(alignment: .leading) {

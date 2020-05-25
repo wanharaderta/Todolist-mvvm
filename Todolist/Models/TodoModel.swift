@@ -9,7 +9,7 @@
 import Foundation
 import CoreData
 
-class TodoViewModel {
+class TodoModel {
     
     var title = ""
     var desc  = ""

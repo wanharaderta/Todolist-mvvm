@@ -8,7 +8,7 @@ A Simple Todo app developed using SwiftUI, MVVM and Core Data
 * List <br/>
 
 
-![alt text](https://github.com/wanharaderta/Todolist-mvvm/blob/master/Todolist/Assets.xcassets/Screen%20Shot%202020-05-23%20at%2014.46.12.imageset/Screen%20Shot%202020-05-23%20at%2014.46.12.png)
+![alt text](https://github.com/wanharaderta/Todolist-mvvm/blob/master/Todolist/Assets.xcassets/Screen%20Shot%202020-05-25%20at%2023.07.18.imageset/Screen%20Shot%202020-05-25%20at%2023.07.18.png)
 
 ![alt text](https://github.com/wanharaderta/Todolist-mvvm/blob/master/Todolist/Assets.xcassets/Screen%20Shot%202020-05-25%20at%2023.05.03.imageset/Screen%20Shot%202020-05-25%20at%2023.05.03.png)
 

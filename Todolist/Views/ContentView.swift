@@ -38,7 +38,9 @@ struct ContentView: View {
                     self.searchTerm.isEmpty ? true :
                         $0.title.localizedCapitalized.contains(self.searchTerm)
                 }, id: \.title) { todo in
-                    TodoCell(todo: todo)
+                    NavigationLink(destination: TodoDetailView(todo: TodoModel(title: todo.title, desc: todo.desc))){
+                        TodoCell(todo: todo)
+                    }
                 }.onDelete(perform: delete)
             }
             .sheet(isPresented: self.$isPresented, onDismiss: {

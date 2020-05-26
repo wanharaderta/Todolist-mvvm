@@ -1,16 +1,14 @@
 //
-//  TodoViewModel.swift
+//  UpdateTodoViewModel.swift
 //  Todolist
 //
-//  Created by Wanhar on 21/05/20.
+//  Created by Wanhar on 26/05/20.
 //  Copyright © 2020 Wanhar. All rights reserved.
 //
 
 import Foundation
-import CoreData
 
-class TodoViewModel {
-    
+class UpdateTodoViewModel {
     var title = ""
     var desc  = ""
     var id = UUID()
@@ -18,5 +16,6 @@ class TodoViewModel {
     init(todo:Todo) {
         self.title  = todo.title!
         self.desc   = todo.desc!
+        self.id     = todo.id!
     }
 }

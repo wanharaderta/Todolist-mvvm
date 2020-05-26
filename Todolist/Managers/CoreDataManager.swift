@@ -62,6 +62,7 @@ class CoreDataManager {
         let todo    = Todo(context: self.moc)
         todo.title   = title
         todo.desc   = desc
+        todo.id     = UUID()
         
         do {
             try self.moc.save()

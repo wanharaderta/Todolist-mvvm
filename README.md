@@ -6,6 +6,7 @@ A Simple Todo app developed using SwiftUI, MVVM and Core Data
 * Delete Todo <br/>
 * Search <br/>
 * List <br/>
+* Detail <br/>
 
 
 ![alt text](https://github.com/wanharaderta/Todolist-mvvm/blob/master/Todolist/Assets.xcassets/Screen%20Shot%202020-05-25%20at%2023.07.18.imageset/Screen%20Shot%202020-05-25%20at%2023.07.18.png)
